@@ -549,16 +549,24 @@ export default function Home() {
                   <p>Pincode: 131021</p>
                 </div>
                 <div className="mt-6 rounded-lg shadow-lg overflow-hidden" style={{ height: '400px' }}>
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.786506696537!2d76.89535907116468!3d28.241849146652992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDE0JzMwLjciIE4gNzfCsDUzJzQzLjMiRQ!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin&q=Pure+Harvest+Dairy+Farm" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0 }} 
-                    allowFullScreen={true} 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Pure Harvest Dairy Farm Location"
-                  ></iframe>
+                  <a 
+                    href="https://www.google.com/maps/dir//28.2418491,76.8953591/@28.241849,76.895359,17z?entry=ttu" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block w-full h-full"
+                    title="Get directions to GOKSIRA Dairy Farm"
+                  >
+                    <iframe 
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.786506696537!2d76.89535907116468!3d28.241849146652992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDE0JzMwLjciIE4gNzfCsDUzJzQzLjMiRQ!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin&q=Pure+Harvest+Dairy+Farm" 
+                      width="100%" 
+                      height="100%" 
+                      style={{ border: 0, pointerEvents: 'none' }} 
+                      allowFullScreen={true} 
+                      loading="lazy" 
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Pure Harvest Dairy Farm Location"
+                    ></iframe>
+                  </a>
                 </div>
               </div>
             </div>
