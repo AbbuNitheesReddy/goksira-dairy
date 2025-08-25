@@ -328,15 +328,13 @@ export default function Home() {
                     <h3 className="font-headline text-xl font-bold text-gray-900 mb-1">{product.name}</h3>
                     <p className="text-muted-foreground text-sm mb-3">{product.unit}</p>
                     <p className="text-lg font-bold text-primary mb-4">₹{product.price}</p>
-                    <button 
-                      className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition-colors duration-200 font-medium"
-                      onClick={() => {
-                        // Add to cart or navigate to order page
-                        console.log(`Ordering: ${product.name}`);
-                      }}
-                    >
-                      Order Now
-                    </button>
+                    <Link href="/not-found" passHref>
+                      <button 
+                        className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition-colors duration-200 font-medium"
+                      >
+                        Order Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
               ))}
